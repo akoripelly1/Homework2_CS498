@@ -3,7 +3,7 @@ const mariadb = require('mariadb');
 const path = require('path');
 
 const app = express();
-const port = 80;
+const port = 8080;
 
 const pool = mariadb.createPool({
     host: '127.0.0.1',
