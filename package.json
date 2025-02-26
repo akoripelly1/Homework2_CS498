@@ -1,0 +1,25 @@
+{
+  "name": "homework2_cs498",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node server.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/akoripelly1/Homework2_CS498.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/akoripelly1/Homework2_CS498/issues"
+  },
+  "homepage": "https://github.com/akoripelly1/Homework2_CS498#readme",
+  "dependencies": {
+    "express": "^4.21.2",
+    "mariadb": "^3.4.0"
+  }
+}

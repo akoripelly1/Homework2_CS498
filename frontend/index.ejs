@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>CS 498: Cloud Data Management</title>
+    <style>
+        body { font-family: Arial, sans-serif; margin: 20px; text-align: center; }
+        table { border-collapse: collapse; width: 50%; margin: 20px auto; }
+        table, th, td { border: 1px solid #ccc; }
+        th, td { padding: 8px; text-align: center; }
+        form { margin-bottom: 20px; }
+        button { padding: 10px 20px; margin: 10px; }
+    </style>
+</head>
+<body>
+    <h1>CS 498: Big Data Intuition</h1>
+    <h2>Assignment 2 - Cloud Database Management</h2>
+
+    <h3>Part I: Cloud Basics</h3>
+    <a href="/greeting"><button>Say Hello</button></a>
+
+    <h3>Part II: Cloud Database</h3>
+    <form action="/register" method="POST">
+        <input type="text" name="username" placeholder="Enter username" required>
+        <button type="submit">Register User</button>
+    </form>
+
+    <h3>Registered Users</h3>
+    <table>
+        <thead>
+            <tr>
+                <th>Username</th>
+            </tr>
+        </thead>
+        <tbody>
+            <% if (users && users.length) { %>
+                <% users.forEach(user => { %>
+                    <tr>
+                        <td><%= user %></td>
+                    </tr>
+                <% }); %>
+            <% } else { %>
+                <tr>
+                    <td>No users found.</td>
+                </tr>
+            <% } %>
+        </tbody>
+    </table>
+
+    <form action="/clear" method="POST">
+        <button type="submit">Clear All Users</button>
+    </form>
+</body>
+</html>
